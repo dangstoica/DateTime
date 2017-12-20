@@ -1,1 +1,5 @@
+Building the application:
 mvn assembly:assembly
+
+Running the application:
+java -jar days-util-1.0-SNAPSHOT.jar  03/01/1989 - 03/08/1983

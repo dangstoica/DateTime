@@ -74,21 +74,5 @@ public class DateUtilsTest
 				}
 		}
 
-		//		public static void main(String[] args)
-		//		{
-		//				DateUtilsTest test = new DateUtilsTest();
-		//				try
-		//				{
-		//						test.testIsLeapYear();
-		//						test.testGetDaysToAndIncludingYear();
-		//						TestErrorLogger.success("Test 'GetDaysToAndIncludingYear' Successful");
-		//						test.testGetLeapYears();
-		//						TestErrorLogger.success("Test 'GetLeapYears' Successful");
-		//				}
-		//				catch (Exception e)
-		//				{
-		//						TestErrorLogger.log("Validation Test Failed", e);
-		//				}
-		//		}
 
 }

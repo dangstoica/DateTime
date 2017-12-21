@@ -2,20 +2,17 @@ package org.dsc.date;
 
 /**
  * @author dan.stoica
- *
  */
 
-public class MyDateFactory
+class MyDateFactory
 {
-		public MyDate createDate(String formatedDate)
+		MyDate createDate(String formatedDate)
 		{
-				String[] parts = formatedDate.split("/");
-				MyDate date = new MyDate(getAsInteger(parts[0]), getAsInteger(parts[1]), getAsInteger(parts[2]));
-				return date;
+				return new MyDate(getAsInteger(formatedDate, 0, 2), getAsInteger(formatedDate, 3, 5), getAsInteger(formatedDate, 6, 10));
 		}
 
-		public static int getAsInteger(String part)
+		private static int getAsInteger(String dateString, int startIndex, int endIndex)
 		{
-				return Integer.parseInt(part);
+				return Integer.parseInt(dateString.substring(startIndex, endIndex));
 		}
 }
